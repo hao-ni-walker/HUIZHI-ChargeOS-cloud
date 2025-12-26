@@ -1,9 +1,7 @@
 package com.hcp.file.service.impl;
 
-import java.util.Collections;
 import java.util.List;
 
-import com.baomidou.mybatisplus.annotation.InterceptorIgnore;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

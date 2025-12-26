@@ -74,7 +74,11 @@
             <groupId>com.zkhz</groupId>
             <artifactId>hcp-common-swagger</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
         <!-- hcp Common mybatisplus -->
         <dependency>
             <groupId>com.zkhz</groupId>
@@ -84,30 +88,9 @@
             <groupId>org.dromara.x-file-storage</groupId>
             <artifactId>x-file-storage-spring</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.huaweicloud</groupId>
-            <artifactId>esdk-obs-java</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.aliyun.oss</groupId>
             <artifactId>aliyun-sdk-oss</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qiniu</groupId>
-            <artifactId>qiniu-java-sdk</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.qcloud</groupId>
-            <artifactId>cos_api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.baidubce</groupId>
-            <artifactId>bce-java-sdk</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.minio</groupId>
-            <artifactId>minio</artifactId>
         </dependency>
     </dependencies>
 

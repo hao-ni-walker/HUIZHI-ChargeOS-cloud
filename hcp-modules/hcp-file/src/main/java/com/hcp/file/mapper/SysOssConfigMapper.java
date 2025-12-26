@@ -7,7 +7,6 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hcp.file.domain.SysOssConfig;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.hcp.common.mybatisplus.mapper.BaseMapperX;
 import org.apache.ibatis.annotations.Param;
 /**
  * 对象存储Mapper接口
