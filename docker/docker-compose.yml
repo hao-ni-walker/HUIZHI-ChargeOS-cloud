@@ -31,7 +31,7 @@ services:
     build:
       context: ./mysql
     ports:
-      - "3306:3306"
+      - "3316:3306"
     volumes:
       - ./mysql/conf:/etc/mysql/conf.d
       - ./mysql/logs:/logs
