@@ -11,9 +11,9 @@ echo "begin package "
 cd ..
 mvn clean install -Dmaven.test.skip=true
 #前端
-cd ./hcp-ui
-npm install --registry=https://registry.npmmirror.com
-npm run build:prod
+#cd ./hcp-ui
+#npm install --registry=https://registry.npmmirror.com
+#npm run build:prod
 cd ../docker
 # copy sql
 echo "begin copy sql "

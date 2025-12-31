@@ -7,12 +7,7 @@ echo.
 cd %~dp0
 
 cd ..
-echo 编译后端
-start /wait cmd /c "mvn clean package -P prod -Dmaven.test.skip=true"
-echo 编译前端
-cd vctgo-ui
-start /wait cmd /c "npm install"
-start /wait cmd /c "npm run build:prod"
+
 cd ..\docker
 
 echo 复制 sql
