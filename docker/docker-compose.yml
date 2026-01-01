@@ -13,6 +13,10 @@ services:
       context: ./nacos
     environment:
       - MODE=standalone
+      - JVM_XMS=256m
+      - JVM_XMX=512m
+      - JVM_MS=128m
+      - JVM_MMS=256m
     volumes:
       - ./nacos/logs/:/home/nacos/logs
       - ./nacos/conf/application.properties:/home/nacos/conf/application.properties
@@ -99,6 +103,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms256m -Xmx512m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m -XX:+UseG1GC -XX:MaxGCPauseMillis=200 -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/logs/heap_dump.hprof
     networks:
       cloud-net:
         ipv4_address: 172.18.0.5
@@ -117,6 +122,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms256m -Xmx512m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.7
@@ -138,6 +144,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms256m -Xmx512m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.8
@@ -156,6 +163,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms128m -Xmx256m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.9
@@ -172,6 +180,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms128m -Xmx256m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.10
@@ -186,6 +195,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms128m -Xmx256m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.11
@@ -207,6 +217,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms128m -Xmx256m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.12
@@ -228,6 +239,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms128m -Xmx256m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.13
@@ -249,6 +261,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms128m -Xmx256m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.14
@@ -270,6 +283,7 @@ services:
       - NACOS_HOST=172.18.0.6
       - NACOS_PORT=8848
       - NETWORK_IP=192.168.1.4
+      - JAVA_OPTS=-Xms128m -Xmx256m -XX:MetaspaceSize=64m -XX:MaxMetaspaceSize=128m -XX:+UseG1GC -XX:MaxGCPauseMillis=200
     networks:
       cloud-net:
         ipv4_address: 172.18.0.15
